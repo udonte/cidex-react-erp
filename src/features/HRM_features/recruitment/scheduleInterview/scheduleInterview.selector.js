@@ -1,0 +1,1 @@
+export const selectScheduleInterviewSlice = (state) => state.schedules

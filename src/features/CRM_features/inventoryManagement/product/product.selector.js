@@ -1,0 +1,1 @@
+export const selectProductSlice = (state) => state.products;

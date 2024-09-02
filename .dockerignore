@@ -1,0 +1,8 @@
+node modules
+.git
+.deployment.yml
+.gitignore
+build
+npm-debug.log
+.github\workflows
+.env

@@ -1,0 +1,11 @@
+// export {default as NavBar} from '../landingPage/navbar/NavBar';
+export { default as Stat } from "./OldComponents/stat/Stat";
+export { default as Hiring } from "./OldComponents/hiring/Hiring";
+export { default as Magt } from "./OldComponents/magt/Magt";
+export { default as CallToAction } from "./OldComponents/callToAction/CallToAction";
+export { default as Faq } from "./OldComponents/faq/Faq";
+export { default as Subscribe } from "./OldComponents/subscribe/Subscribe";
+export { default as Footer } from "./OldComponents/footer/Footer";
+export { default as Copyright } from "./OldComponents/copyright/Copyright";
+export { default as ClientReview } from "./OldComponents/clientReview/ClientReview";
+export { default as PricingPlan } from "./OldComponents/pricing/PricingPlan";

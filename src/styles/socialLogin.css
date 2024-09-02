@@ -1,0 +1,24 @@
+/* google & facebook options at the top-right */
+.social__alternatives {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.google,
+.facebook {
+  background-color: var(--primary-white);
+  padding: 8px 8px;
+  line-height: 24px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  box-shadow: var(--box-shadow-alt);
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  align-items: center;
+}
+
+.social__alternatives p {
+  font-size: 16px;
+  color: #667085;
+}

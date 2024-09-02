@@ -1,0 +1,15 @@
+.sidebar {
+  margin: 5px 0;
+  
+}
+
+.sideBar__details {
+  cursor: pointer;
+  text-align: center;
+}
+
+.sideBar__icons {
+  color: var(--nav-icon-color);
+  font-size: 1.4rem;
+  margin-right: 12px;
+}

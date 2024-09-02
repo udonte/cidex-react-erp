@@ -1,0 +1,14 @@
+version: '3'
+services:
+  ProjectExceed:
+    # image: exceed_front
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    environment: 
+        - REACT_APP_EXCEED_BACKEND_BASE_URL = ${REACT_APP_EXCEED_BACKEND_BASE_URL}
+    ports:
+      - 80:80
+    # command: npm start
+    volumes: 
+      - ./ngnix.conf:/etc/nginx/conf.d/default.conf

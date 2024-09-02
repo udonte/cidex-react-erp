@@ -1,0 +1,179 @@
+
+
+.table_head{
+    background-color:#F9FAFB;
+}
+
+/* .job_posting_main{
+    height:100%;
+} */
+
+.icon-size{
+    font-size:medium;
+    margin-right: 10px;
+}
+.icon_size_header{
+    font-size:x-large;
+}
+
+/* //----------------------Header Styling--------------------//  */
+.job_posting_header{
+display: flex;
+justify-content:space-between   ;
+text-align: center;
+background-color:#F9FAFB;
+padding:34px 60px;
+margin-bottom:5px;
+}
+
+.job_posting_editor{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    }
+
+.job_posting_admin {
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.job_posting_header button{
+    background: #C55514;
+    color:#fff;
+    width:212px;
+    height:40px;
+    border-radius:10px ;
+    border:none;
+}
+
+.Job_posting_admin_name{
+    margin:0px 20px 0px 80px;
+}
+
+.job_posting_admin_img{
+    width:36px;
+    height:36;
+}
+
+.job_posting_header_btn{
+    cursor:pointer;
+}
+/* //----------------------------//----------//-----------------------  */
+
+
+
+.job_posting_roles_header{
+    background-color: #F9FAFB;
+    padding:30px 40px;
+}
+.Job_posting_tables{
+    background-color:#F9FAFB;
+    width:100%;
+    text-align: center;
+}
+
+.Job_posting_tables td{
+    padding:20px 10px;
+    
+}
+
+.job_posting_table_divider{
+    border-bottom: 1px solid rgba(102, 102, 102,0.2);
+}
+.job_posting_tables{
+ border-collapse: collapse;
+ text-align:left;
+}
+
+.job_posting_table_head{
+    background:#EAECF0;
+    text-align:center;
+}
+
+.job_posting_table_head th{
+    padding: 12px 24px;
+    
+}
+
+ .status_approved{
+    padding:10px 20px;
+    border-radius: 40px;
+    background: #ECFDF3;
+    color:#027A48;
+ }
+
+ .status_cancled{
+    padding:10px 20px;
+    border-radius: 40px;
+    background: #FEE2E2;;
+    color:#7F1D1D;
+ }
+
+ .status_pending{
+    padding:10px 20px;
+    border-radius: 40px;
+    background:  #FEF9C3;
+    color: #713F12;
+ }
+ #713F12
+
+.Job_posting_tables td {
+    text-align: center;
+}
+
+.job_posting_department1{
+    padding:10px 20px;
+    color: #6941C6;
+    border-radius: 16px;
+    background: #F9F5FF;
+
+}
+
+.job_posting_department2{
+    padding:10px 20px;
+    color: #175CD3;
+    border-radius: 16px;
+    background:#EFF8FF;
+}
+
+
+/*   //----------------- footer --------- */
+
+#job_posting_footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #F9FAFB;
+    padding:30px 40px;
+    border-top: 1px solid rgba(102, 102, 102,0.2);
+}
+
+
+ .job_posting_footer_li{
+    display:inline;
+    list-style-type:none;
+    padding:20px;
+    cursor:pointer;
+}
+
+.job_posting_footer_li :active{
+    display:inline;
+    list-style-type:none;
+    padding:20px;
+    background:gray;
+    border-radius:8px;
+}
+
+.job_posting_footer_li a{
+    text-decoration:none;
+}
+
+.job_posting_footer_btn{
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+border-radius: 8px;
+border: 1px solid #D0D5DD;
+width: 114px;
+height: 36px;
+cursor:pointer;
+}

@@ -1,0 +1,9 @@
+import { icons } from "./icons";
+import { images } from "./images/images";
+
+
+export const assets = {
+ images,
+ icons,
+ 
+}

@@ -1,0 +1,254 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;500;600;700;800;900&display=swap");
+:root {
+  --bg-LandingPage: #aff4c6;
+  --bg-primary: #f5f5f5; 
+  --bg-alt: #ffffff;
+  --primary-white: #ffffff;
+  --light-grey: #667085;
+  --gurugeeks-color: #c55514;
+  --gurugeeks-bold-text-color: #fb6514;
+  --button-alt-color: #f9dedc;
+  --border-color: #d0d5dd;
+  --hover-bg: rgba(16, 24, 40, 0.05);
+  --nav-icon-color: #3f3f46;
+  --success-color: #00b87c;
+  --lg-font-size: 48px;
+  --md-font-size: 14px;
+  --dark-color-grey: #101828;
+  --lg-font-weigth: 600;
+  --md-font-weight: 700;
+  --lg-font-weight: 900;
+  --jakatara-font: "Plus Jakarta Sans", sans-serif;
+  --nav-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  --box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  --box-shadow-alt: 0px 0.98651px 1.97302px rgba(16, 24, 40, 0.05);
+  --font-family: "Inter", sans-serif;
+  --nunito: "Nunito Sans", sans-serif;
+  --call-to-action: #fb6514;
+  height: 100%;
+}
+
+/* 
+Global Styles
+*/
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  /* outline: 1px solid gray; */
+}
+
+/* Hide the native scrollbars */
+::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #0000001f;
+  border-radius: 100px;
+}
+
+/* Style the custom scrollbar track */
+::-webkit-scrollbar-track {
+  background: none;
+}
+
+/* Hide the scrollbar buttons (up and down arrows) */
+::-webkit-scrollbar-button {
+  display: none;
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #888 transparent;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+}
+
+.App {
+  height: 100vh;
+}
+
+ul {
+  list-style: none;
+}
+
+.container1 {
+  display: block;
+  position: relative;
+  padding-left: 24px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide default checkbox */
+.container1 input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/*custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 23px;
+  width: 23px;
+  background-color: #fff;
+  border: 0.3px solid #c7c8cd;
+  border-radius: 3px;
+}
+
+.container1:hover input ~ .checkmark {
+  background-color: transparent;
+}
+
+.container1 input:checked ~ .checkmark {
+  background-color: #ca5e1f;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container1 input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.container1 .checkmark:after {
+  left: 7px;
+  top: 3px;
+  width: 7px;
+  height: 13px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(35deg);
+  -ms-transform: rotate(35deg);
+  transform: rotate(35deg);
+}
+
+.slick-slide > div {
+  margin: 0 10px;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+}
+
+.accordion-content.open {
+  max-height: 200px; /* Set to whatever height you want */
+}
+
+.accordion-content.closed {
+  max-height: 0;
+}
+
+.button-container {
+  position: relative;
+  height: 100px; /* Adjust as needed */
+  overflow: hidden;
+}
+
+.animated-button {
+  position: absolute;
+  bottom: 0;
+  left: 50%; /* Align the button */
+  transform: translateY(100%);
+  transition: transform 0.5s ease, opacity 0.5s ease; /* Transition for transform and opacity */
+  opacity: 0; /* Initially hide the button */
+}
+
+.toggle-button {
+  margin-top: 10px; /* Adjust as needed */
+}
+
+/* Slide in effect when showButton is true */
+.button-container.show .animated-button {
+  transform: translateY(0);
+  opacity: 1; /* Show the button */
+}
+
+.checkbox {
+  width: 223px;
+  height: 40px;
+  background-color: #d0d0d0;
+  position: relative;
+  border-radius: 10px;
+  color: black;
+  overflow: hidden;
+}
+
+#checkbox_toggle {
+  display: none;
+}
+
+.checkbox .toggle {
+  width: 100px;
+  height: 80%;
+  position: absolute;
+  border-radius: 10px;
+  left: 5px;
+  top: 4px;
+  cursor: pointer;
+  background: #139f11;
+  transition: 0.4s;
+  box-shadow: 0px 0px 3px #e7fcee, 0px 0px 5px #cbf8cb;
+}
+
+.checkbox .slide {
+  width: 230px;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  cursor: pointer;
+}
+
+.checkbox .slide .text {
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 4px;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.check:checked + .checkbox .slide .toggle {
+  transform: translateX(113px);
+  background: red;
+  box-shadow: -0px -0px 10px #8983f7, -0px -0px 3px #8983f7;
+}
+
+.check:checked + .checkbox .slide {
+  /* background-color: #; */
+  color: #fff;
+}
+
+.scroll-width  {
+  scrollbar-width: none; 
+}
+

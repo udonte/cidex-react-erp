@@ -1,0 +1,15 @@
+export { default as Lead } from "./LeadManagement/Lead";
+export { default as Dashboard } from "./Dashboard/index";
+export { default as Customer } from "./Customer/Customer";
+export { default as ContactDetails } from "./Customer/ContactDetails";
+export { default as Tickets } from "./CustomerService/Tickets/Tickets";
+export { default as Details } from "./CustomerService/Tickets/Details";
+export { default as CustomContactList } from "./Customer/CustomContactList";
+export { default as CustomContactListDetails } from "./Customer/CustomContactListDetails";
+export { default as SalesOverview } from "./Sales/Overview";
+export { default as CreateInvoice } from "./Sales/CreateInvoice";
+export { default as SalesInvoice } from "./Sales/SalesInvoice";
+// export { default as CustomContactListDetails } from "./Customer/CustomContactListDetails";
+export { default as Settings } from "./Settings";
+export { default as Inventory } from "./InventoryManagement/Inventory";
+export { default as ProductDetails } from "./InventoryManagement/ProductDetails";

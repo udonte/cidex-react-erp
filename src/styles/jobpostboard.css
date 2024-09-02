@@ -1,0 +1,90 @@
+.jobpost__board {
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+}
+
+.jobpost__main__content {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 80%;
+  height: auto;
+}
+
+.jobpost__form__section {
+  width: 100%;
+  padding: 50px;
+}
+
+.jobpost__input {
+  display: flex;
+  margin-bottom: 4rem;
+}
+
+.input__field {
+  width: 175%;
+  padding: 18px 16px;
+  height: 40px;
+  border: 1px solid #d0d5dd;
+  border-radius: 8px;
+  margin-left: 10.3rem;
+}
+
+.input__field__description{
+  width: 180%;
+  padding: 28px 16px;
+  height: 80px;
+  border: 1px solid #d0d5dd;
+  border-radius: 8px;
+  margin-left: 10rem;
+  font-family: 'Inter';
+}
+
+.input__field__joblocation{
+  width: 250%;
+  padding: 18px 16px;
+  height: 40px;
+  border: 1px solid #d0d5dd;
+  border-radius: 8px;
+  margin-left: 5.5rem;
+}
+
+.top-text {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.sub-text {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.postboard__br__line{
+  margin-bottom: 3rem;
+}
+
+.checkbox__container{
+  margin: 0 0 0 4rem;
+}
+
+.job__checkbox{
+  margin: 0 10px 0 20px ;
+  font-size: 14px;
+}
+
+.jobpost__button__div{
+  text-align: right;
+  
+}
+
+.jobpost__button{
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  height: 40px;
+  background: var(--gurugeeks-color);
+  color: var(--bg-alt);
+  width: 15%;
+  margin-top: 4rem;
+}

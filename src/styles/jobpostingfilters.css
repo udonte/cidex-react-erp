@@ -1,0 +1,19 @@
+.container{
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+.mainContent{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 100%;
+    flex: 1;
+}
+.searchContent{
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+}

@@ -1,0 +1,56 @@
+.sideBar__nav__container {
+  box-shadow: var(--nav-box-shadow);
+  height: 100vh;
+  height: 100dvh;
+}
+
+.logo {
+ margin-top: 40px;
+}
+
+.sideBar__nav__container::-webkit-scrollbar {
+  width: 0;
+}
+
+.text {
+  margin-right: 5rem;
+}
+
+.category-sidebar {
+  margin: 0;
+  font-size: 0.9rem;
+  margin-left: 2rem;
+}
+.sideBar__nav__container > p {
+  margin: 20px 0;
+}
+
+.show-side-bar {
+  transition: all 0.2s ease;
+  transform: translateX(0%);
+}
+
+.hide-side-bar {
+  transition: all 0.2s ease;
+  transform: translateX(-100%);
+}
+
+.test {
+  left: 30rem;
+}
+
+.selection {
+  background-color: var(--gurugeeks-color);
+}
+
+.menu-text {
+  color: rgb(76, 76, 76)
+}
+
+.menu-text:active, .menu-text:focus {
+  background-color: red;
+}
+
+svg {
+  font-size: 1.1rem;
+}
